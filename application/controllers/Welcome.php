@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
 class Welcome extends CI_Controller {
 
 	/**

@@ -1,1 +1,1 @@
-<?php echo $title . " " . " " . $heading. " " .$message ?>
+<?php echo $collection['description']; ?>
