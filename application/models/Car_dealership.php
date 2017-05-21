@@ -24,7 +24,7 @@ class Car_dealership extends CI_Model  {
 					'slogan' => '<span>Zum Super-Sonderpreis!</span>',
 					'description' => '2.0&nbsp;TDCi „4x4“&nbsp;Automatic 110&nbsp;kW (150&nbsp;PS), 5-trg., 6-Gang-Automatik, Zentralverriegelung mit Fernbedienung, Geschwindigkeitsregelanlage, Fensterheber elektrisch vorn und hinten, Berganfahrassistent, Allradantrieb,Klimaanlage automatik, Leder-/Stoff Polster mit Sitzheizung und Fahrersitz 10-fach elektrisch einstellbar mit Memory Funktion, Start-Stopp-System, SonyNavigation mit SYNC und Premiumsoundsystem, Einpark-Assistent, Design-Paket&nbsp;I, Technologie-Paket, Leichtmetallräder 19“&nbsp;5X2 Speichen Design, FordKey Free Paket, Zusatzheizung, u.&nbsp;v.&nbsp;m.',
 			),
-			'focus' => array(
+			'focus_b' => array(
 				'active' => 1,
 				'shortCarName' => 'Ford Focus',
 				'completeCarName' => '<strong class="car-type">Ford Focus</strong> Business',
@@ -43,7 +43,7 @@ class Car_dealership extends CI_Model  {
 				'description' => '5-trg., 7 Airbags (Front-, Seiten-, Kopf-, Schulter- und Knieairbag), Klimaanlage manuell, Audiosystem CD, Nebelscheinwerfer, Fensterheber vorn und hinten, elektrisch, Multifunktions-Lederlenkrad, 3-Speichen-Design u. v. m.',
 				'payment-suffix' => '/Monat',
 			),
-			'focus' => array(
+			'focus_t' => array(
 				'active' => 1,
 				'shortCarName' => 'Ford Focus',
 				'completeCarName' => '<strong class="car-type">Ford Focus</strong> Turnier',
