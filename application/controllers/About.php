@@ -18,16 +18,13 @@ class About extends CI_Controller {
 	 */
 	public function index()
 	{
-		//$data['hello']='hellow world';
-
+		$this->load->model('car_dealership');
+        
 		$data['destination'] = array(
 			'site' => 'block_view/about',
 		);
-
-		$data['collection'] = array(
-			'description' => 'ANjvbujienhgrupoejhnbupoiretjnheutoiprwhtpou'
-		);
 		
+		$data['collection'] = $this->car_dealership->getAllCars();
 
 		$this->load->view('modular_view_index', $data);
 	}
