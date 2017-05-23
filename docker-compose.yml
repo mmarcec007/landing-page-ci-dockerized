@@ -1,0 +1,14 @@
+version: '2'
+services:
+  php:
+    image: docker.twofour.de/twofour-docker/php-5.6-dev
+    volumes:
+      - .:/var/www
+  apache2:
+    image: docker.twofour.de/twofour-docker/apache2
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www
+    links:
+      - php:php
