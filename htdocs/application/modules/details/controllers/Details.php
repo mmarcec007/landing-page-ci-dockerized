@@ -21,7 +21,7 @@ class Details extends CI_Controller {
         $this->load->model('base/car_dealership');
 
         $data['destination'] = array(
-            'site' => 'block_view/details',
+            'site' => 'details',
         );
 
         $data['carDetails'] = $this->car_dealership->getSpecificCar($key);

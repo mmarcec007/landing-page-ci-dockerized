@@ -17,7 +17,7 @@ if ( ! function_exists('test_method'))
         return base_url('assets/images/ford/'.$key.'.jpg');
     }
 
-    function to_view($view, $data)
+    function to_view($view, $data = '')
     {
         return site_url($view.$data);
     }   

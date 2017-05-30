@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 	{
 		//$data['hello']='hellow world';
 		$data['destination'] = array(
-			'site' => 'block_view/home',
+			'site' => 'home',
 		);
 
 		$data['collection'] = array(
@@ -32,4 +32,17 @@ class Home extends CI_Controller {
 
         $this->load->ext_view('modules/base/views', 'modular_view_index', $data);
 	}
+
+    function submit()
+    {
+        if($_POST['name'] == "")
+        {
+            $message = "You can't send empty text";
+        }
+        else
+        {
+            $message = $_POST['name'] . $_POST['surname'] . $_POST['message'];
+        }
+        echo $message;
+    }
 }

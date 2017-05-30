@@ -7,7 +7,7 @@ class Cars extends MX_Controller {
         $this->load->model('base/car_dealership');
 
         $data['destination'] = array(
-            'site' => 'block_view/about',
+            'site' => 'about',
         );
 
         $data['collection'] = $this->car_dealership->getAllCars();
