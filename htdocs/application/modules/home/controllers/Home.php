@@ -28,8 +28,8 @@ class Home extends CI_Controller {
 			'heading' => 'My Heading',
 			'message' => 'My Message'
 		);
-		
 
-		$this->load->view('modular_view_index', $data);
+
+        $this->load->ext_view('modules/base', 'modular_view_index', $data);
 	}
 }

@@ -17,7 +17,7 @@ class Cars extends MX_Controller {
             $data['lastShown'] = $car;
         }
 
-		$this->load->view('modular_view_index', $data);
+        $this->load->ext_view('modules/base', 'modular_view_index', $data);
 	}
 
     public function back_to_index($car = '')
