@@ -1,13 +1,13 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Users extends MX_Controller {
+class Cars extends MX_Controller {
 
 	public function index($car = '')
 	{
-        $this->load->model('users/car_dealership');
+        $this->load->model('cars/car_dealership');
 
         $data['destination'] = array(
-            'site' => 'block_view/about2',
+            'site' => 'block_view/about',
         );
 
         $data['collection'] = $this->car_dealership->getAllCars();
@@ -19,7 +19,9 @@ class Users extends MX_Controller {
 
 		$this->load->view('modular_view_index', $data);
 	}
-}
 
-/* End of file users.php */
-/* Location: ./application/modules/users/controllers/users.php */
+    public function back_to_index($car = '')
+    {
+        $this->index($car);
+    }
+}

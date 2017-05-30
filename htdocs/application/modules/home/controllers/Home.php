@@ -1,5 +1,5 @@
 <?php
-class About extends CI_Controller {
+class Home extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -16,27 +16,20 @@ class About extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index($car = '')
+	public function index()
 	{
-		$this->load->model('car_dealership');
-        
+		//$data['hello']='hellow world';
 		$data['destination'] = array(
-			'site' => 'block_view/about',
+			'site' => 'block_view/home',
+		);
+
+		$data['collection'] = array(
+			'title' => 'My Title',
+			'heading' => 'My Heading',
+			'message' => 'My Message'
 		);
 		
-		$data['collection'] = $this->car_dealership->getAllCars();
-        $data['lastShown'] = '';
-
-		if ($car != '') {
-            $data['lastShown'] = $car;
-        }
-
 
 		$this->load->view('modular_view_index', $data);
 	}
-
-    public function back_to_index($car = '')
-    {
-        $this->index($car);
-    }
 }

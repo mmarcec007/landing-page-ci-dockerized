@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="card-action">
-                        <a href="<?php echo to_view("about/back_to_index/", $carDetailsKey); ?>">Back to List</a>
+                        <a href="<?php echo to_view("cars/back_to_index/", $carDetailsKey); ?>">Back to List</a>
                     </div>
                 </div>
             </div>

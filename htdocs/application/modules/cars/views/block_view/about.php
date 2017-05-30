@@ -1,8 +1,8 @@
 
-<p>ceca</p>
+
 <div class="container">
     <?php // echo $lastShown; ?>
-    <a href="<?php echo site_url('welcome') ?>">Back to List</a>
+    <a href="<?php echo site_url('home') ?>">Back to List</a>
     <?php $counter = 0; ?>
     <ul class="collection" data-collapsible="accordion">
         <?php foreach ($collection as $car => $value) : ?>

@@ -7,5 +7,5 @@
   <link href="<?php echo base_url('assets/materialize/css/meterial-icons.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo base_url('assets/materialize/css/materialize.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo base_url('assets/materialize/css/style.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="<?php echo base_url('application/modules/users/assets/css/ceca.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?php echo base_url('assets/users/css/ceca.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
