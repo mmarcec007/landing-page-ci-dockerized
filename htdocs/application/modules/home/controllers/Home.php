@@ -30,6 +30,6 @@ class Home extends CI_Controller {
 		);
 
 
-        $this->load->ext_view('modules/base', 'modular_view_index', $data);
+        $this->load->ext_view('modules/base/views', 'modular_view_index', $data);
 	}
 }

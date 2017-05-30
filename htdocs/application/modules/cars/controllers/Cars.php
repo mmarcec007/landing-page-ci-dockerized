@@ -4,7 +4,7 @@ class Cars extends MX_Controller {
 
 	public function index($car = '')
 	{
-        $this->load->model('cars/car_dealership');
+        $this->load->model('base/car_dealership');
 
         $data['destination'] = array(
             'site' => 'block_view/about',
@@ -17,7 +17,7 @@ class Cars extends MX_Controller {
             $data['lastShown'] = $car;
         }
 
-        $this->load->ext_view('modules/base', 'modular_view_index', $data);
+        $this->load->ext_view('modules/base/views', 'modular_view_index', $data);
 	}
 
     public function back_to_index($car = '')

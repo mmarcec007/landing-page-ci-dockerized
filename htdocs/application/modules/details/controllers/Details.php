@@ -18,7 +18,7 @@ class Details extends CI_Controller {
 	 */
     public function index($key)
     {
-        $this->load->model('car_dealership');
+        $this->load->model('base/car_dealership');
 
         $data['destination'] = array(
             'site' => 'block_view/details',
@@ -27,6 +27,6 @@ class Details extends CI_Controller {
         $data['carDetails'] = $this->car_dealership->getSpecificCar($key);
         $data['carDetailsKey'] = $key;
 
-        $this->load->ext_view('modules/base', 'modular_view_index', $data);
+        $this->load->ext_view('modules/base/views', 'modular_view_index', $data);
     }
 }
