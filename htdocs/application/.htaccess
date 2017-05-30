@@ -2,7 +2,7 @@
     Require all denied
 </IfModule>
 <IfModule !authz_core_module>
-    Deny from all
+    Allow from all
 </IfModule>
 <FilesMatch "\.(ttf|otf|eot|woff)$">
     <IfModule mod_headers.c>
