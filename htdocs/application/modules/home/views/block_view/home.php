@@ -7,7 +7,7 @@
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
         <div class="row center">
-          <a href="<?php echo site_url('about') ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="<?php echo site_url('cars') ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 

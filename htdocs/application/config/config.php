@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://172.18.0.3/';
+$config['base_url'] = 'http://172.18.0.1/';
 
 /*
 |--------------------------------------------------------------------------
@@ -469,3 +469,7 @@ $config['time_reference'] = 'local';
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+$config['modules_locations'] = array(
+    APPPATH.'modules/' => '../modules/',
+);
